@@ -1,0 +1,34 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Buscador de PHP</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+        <script language="javascript" type="text/javascript">
+            window.onload=function(){
+                var sfield=document.getElementsByTagName('form')[0].elements[0];
+                if(!sfield){
+                    return
+                };
+                sfield.onfocus=function(){
+                    this.value="";
+                    if(!this.value){
+                        this.value"Busque aqui";
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>El buscador de PHP</h1>
+        <div class="maincontainer">
+            <form method="get">
+                
+            </form>
+        </div>
+    </body>
+</html>
